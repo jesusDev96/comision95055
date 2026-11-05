@@ -1,0 +1,113 @@
+/* 
+CSS = Cascading StyleSheet
+Hoja de Estilos en Cascada
+
+3 selectores:
+3. Etiqueta
+2. Class <-- Más peso que Etiqueta || Nos concetramos principalmente en CLASS
+1. ID <-- Más Jerarquía || Lo dejamos separado para JS
+*/
+
+/* TAMAÑOS
+----------
+px = pixel = 1 punto en pantalla
+rem = 16px || 2 rem = 32 || 1.5rem = 24px
+em = hace referencia al PADRE | es relativa, no tiene un valor exacto
+% = hace referencia a SU PADRE. NO AL VALOR, sino al tamaño total de su padre
+------
+viewport
+vh = viewport HEIGH = tamaño del dispositivo
+vw = viewport WIDTH = tamaño del dispositivo
+*/
+
+/* 
+Colores:
+Background: #101318
+BG Contraste: #1C222B
+Titulos: #F4F6F8
+Texto: #A5ADB8
+Accent: #B6F36B
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Unbounded:wght@200..900&display=swap');
+
+:root{
+    --font-ppal: Unbounded, sans-serif;
+    --font-sec: Space Grotesk, arial;
+    --bg-ppal: #101318;
+    --bg-sec: #1C222B;
+    --titles: #F4F6F8;
+    --text: #A5ADB8;
+    --accent: #B6F36B;
+}
+
+/* RESET */
+
+body{
+    background-color: var(--bg-ppal);
+}
+/* TITULOS */
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--font-ppal);
+    color: var(--titles);
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2.5rem;
+}
+h3{
+    font-size: 2rem;
+}
+h4{
+    font-size: 1.75rem;
+}
+/* TEXTOS */
+p, a{
+    font-family: var(--font-sec);
+    color: var(--text);
+}
+p{
+    font-size: 1.5rem;
+}
+a{
+    font-size: 1.25rem;
+}
+/* QUITAR EL SUBRAYADO */
+a{
+    text-decoration: none;
+}
+/* QUITAR EL DOT DEL COSTADO */
+ul{
+    list-style: none;
+}
+
+
+/*  */
+/* HEADER */
+/*  */
+
+
+
+
+/*  */
+/* FOOTER */
+/*  */
+
+footer .rrss{
+    width: 100px;
+    height: auto;
+}
+
+/*  */
+/* HOME */
+/*  */
+
+main img{
+    width: 50vw;
+    height: auto;
+}
+.name{
+    color: var(--accent);
+}
