@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+/* font-family: "Fraunces", serif; */
+/* font-family: "Jost", sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Jost", sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Fraunces", serif;
+}
+
+
+/* HEADER */
+header {
+    padding: 16px 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+/* Nav */
+.limonaia-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1312px;
+}
+.limonaia-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.limonaia-nav ul li {
+    list-style: none;
+}
+.nav-link {
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #3A1218;
+}
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.contact-button {
+    display: inline-block;
+    padding: 13px 28px;
+    background-color: #7A1F2B;
+    border-radius: 999px;
+    color: #FBF6EA;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-decoration: none;
+}
