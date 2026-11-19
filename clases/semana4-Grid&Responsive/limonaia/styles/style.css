@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+/* font-family: "Fraunces", serif; */
+/* font-family: "Jost", sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Jost", sans-serif;
+}
+h1,h2,h3,h4,h6 {
+    font-family: "Fraunces", serif;
+}
+h2 {
+    font-weight: 800;
+    font-size: 4.25rem;
+    color: #7A1F2B;
+}
+h3 {
+    font-weight: 700;
+    font-size: 1.75rem;
+    color: #7A1F2B;
+}
+h5 {
+    font-weight: 500;
+    font-size: 0.8125rem;
+    color: #7A1F2B;
+}
+
+
+
+/* HEADER */
+header {
+    padding: 16px 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+/* Nav */
+.limonaia-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1312px;
+}
+.limonaia-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.limonaia-nav ul li {
+    list-style: none;
+}
+.nav-link {
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #3A1218;
+}
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.contact-button {
+    display: inline-block;
+    padding: 13px 28px;
+    background-color: #7A1F2B;
+    border-radius: 999px;
+    color: #FBF6EA;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+
+/* SERVICIOS */
+.detalles-servicios {
+    width: 100%;
+    max-width: 1312px;
+    padding: 64px 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    background-color: #FBF6EA;
+}
+.detalles-servicios .titles-container h2 {
+    margin-top: 24px;
+}
+
+
+.servicios-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+}
+.servicio-card {
+    padding: 30px 36px;
+    border: 1px solid #3A1218;
+    max-width: 267px;
+}
+.servicio-card h3 {
+    margin-top: 15px;
+    margin-bottom: 34px;
+}
+
+
+
+/* MOBILE */
+@media (max-width: 743px) {
+    h2 {
+        font-size: 3rem;
+    }
+    .detalles-servicios {
+        padding: 82px 16px;
+    }
+
+    .servicios-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 1fr);
+    }
+    .servicio-card {
+        padding: 28px 32px;
+        max-width: 322px;
+    }
+}
